@@ -1,5 +1,5 @@
 const mainContentInicio = (() => {
-    let tabContent = `<div id="firstTabContent">
+    let tabContent = `<div id="inTabContent">
     <h3>Comida tradicional se casa com o delivery moderno!</h3>
     <p>Quer comer algo que te traga lembranças da infância e que saia da rotina, mas 
     sair de casa não é uma opção?! Peça com a gente!!! Este restaurante existe a muitos anos
