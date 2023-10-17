@@ -1,9 +1,9 @@
 const LoadPage = (() => {
     const content = document.querySelector('#content');
     
-    const loadLayout = (image) => {
+    const loadHeader = (image) => {
         let layout = document.createElement('div');
-        layout.innerHTML = `<div id="layout">
+        layout.innerHTML = `<div id="header">
                                 <img src="${image}" alt="fogão a lenha">
                                 <h1 id="header">Forno de Casa</h1>
                             </div>`;
@@ -25,6 +25,7 @@ const LoadPage = (() => {
 
     const loadMain = (pageContent) => {
         let main = document.createElement('div');
+        main.setAttribute("id", "mainArea");
         main.innerHTML = pageContent;
         content.appendChild(main);
     };
@@ -35,7 +36,7 @@ const LoadPage = (() => {
         content.appendChild(footer);
     };
 
-    return {content, loadLayout, loadNavBar,loadMain, loadFooter};
+    return {content, loadHeader, loadNavBar,loadMain, loadFooter};
 })();
 
 export default LoadPage;

@@ -1,11 +1,11 @@
 import './style.css';
 import loadPage from './loadpage.js';
-import backgroundImg from './images/backgroundimg.jpeg';
+import backgroundImg from './images/fogaoalenha2.jpg';
 import mainContentInicio from './inicio.js';
 import mainContentContato  from './contato.js';
 import mainContentMenu from './menu.js';
 
-loadPage.loadLayout(backgroundImg);
+loadPage.loadHeader(backgroundImg);
 loadPage.loadNavBar();
 loadPage.loadMain(mainContentInicio.tabContent);
 loadPage.loadMain(mainContentMenu.tabContent);
